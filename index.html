@@ -9,6 +9,7 @@ a wide-spread audience.">
 </head>
 
 <style>
+    
 a {
     color: #FFFFFF;
 }
@@ -24,13 +25,27 @@ table, th, td {
     -moz-border-radius: 2px;
     background: #030507;
 }
-body {
-    background: url("http://static.tumblr.com/mz4x0ns/6k6okrs22/backdrop.png") no-repeat center center fixed;
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("http://static.tumblr.com/mz4x0ns/6k6okrs22/backdrop.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
 .vertical {
   border-left: thick solid #FFFFFF;
 }
 }
+
 </style>
 
 <script>
